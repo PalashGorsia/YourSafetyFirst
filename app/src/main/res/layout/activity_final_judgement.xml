@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="showBlankView"
+            type="Boolean" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.finaljudgement.FinalJudgementActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/top_bar"
+                layout="@layout/appbar_back" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TwentyBlackNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E3F2FF"
+                android:paddingStart="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/overall_judgement" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="13dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="@{showBlankView ? View.GONE : View.VISIBLE ,default = visible }">
+
+
+                        <TextView
+                            style="@style/textview_fourteen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="@string/the_state_of_your_safe_driving_nerve_is_as_follows" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="15dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="@dimen/d_3"
+                            app:strokeColor="@color/black"
+                            app:strokeWidth="5dp">
+
+                            <LinearLayout
+                                android:id="@+id/card_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/level"
+                                    style="@style/blueButtonThirtySix"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true" />
+
+                                <TextView
+                                    android:id="@+id/title"
+                                    style="@style/blueButtonThirtySix"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:maxLines="2"
+                                    android:paddingStart="3dp"
+                                    android:paddingEnd="3dp"
+                                    android:singleLine="false" />
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/textview_fourteen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="@string/after_confirmation" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/description"
+                            style="@style/textview_fourteen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/edittext_curve"
+                            android:gravity="left"
+                            android:padding="10dp" />
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_registration"
+                            style="@style/newBlueButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="@string/register" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="@{showBlankView ? View.VISIBLE : View.GONE ,default = visible }" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/progress"
+            layout="@layout/progress_bar" />
+
+    </FrameLayout>
+</layout>

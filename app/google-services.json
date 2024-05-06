@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1092828567843",
+    "project_id": "driver-safety-8be63",
+    "storage_bucket": "driver-safety-8be63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092828567843:android:bb68979083117100655496",
+        "android_client_info": {
+          "package_name": "com.app.yoursafetyfirst"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092828567843-9ccb3ig080eh3hcaf6rgm57637bdtjth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.yoursafetyfirst",
+            "certificate_hash": "485678e87a33aa37f36e09cfc160b80d85a5ce8d"
+          }
+        },
+        {
+          "client_id": "1092828567843-bekn95re6c39rv4qhi3p80f4v5jquhuh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3CB_Xru_cDPxnAbD0vkvbrW9N3wFBhzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092828567843-bekn95re6c39rv4qhi3p80f4v5jquhuh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1092828567843-ct1hvqmkteudldv4n025ijjssup2133f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.DivingSafety.Driving-Safety-Test"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="ring"
+            type="Boolean" />
+
+        <variable
+            name="viewModel"
+            type="com.sdei.yoursafetyfirst.ui.signup.SignupViewModel" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.signup.SignupActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/app_bar"
+                layout="@layout/appbar" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="@string/create_your_account" />
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/username_signup" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/username"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_username"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:text="@={viewModel.userNameObserver}" />
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/email_id_signup" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/email"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_email_id"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:text="@={viewModel.emailObserver}" />
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/password_signup" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/password_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:endIconDrawable="@drawable/custom_eye_password"
+                        app:errorEnabled="false"
+                        app:errorIconDrawable="@null"
+                        app:hintAnimationEnabled="false"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/password"
+                            style="@style/editText_fourteen"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edittext_curve"
+                            android:hint="@string/enter_password"
+                            android:inputType="textPassword"
+                            android:padding="1dp"
+                            android:singleLine="true" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/confirm_password_signup" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:endIconDrawable="@drawable/custom_eye_password"
+                        app:errorEnabled="false"
+                        app:hintAnimationEnabled="false"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/confirm_password"
+                            style="@style/editText_fourteen"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edittext_curve"
+                            android:hint="@string/enter_confirm_password"
+                            android:inputType="textPassword"
+                            android:padding="1dp"
+                            android:singleLine="true"
+                            android:text="@={viewModel.confirmPasswordObserver}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/gender" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_curve">
+
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/gender_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/phone_number" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/phone_number"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_phone_number"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:text="@={viewModel.phoneNumberObserver}" />
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/year_of_birth" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/birth_year"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/select_year_of_birth"
+                        android:maxLength="12"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:text="@={viewModel.yearObserver}" />
+
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/enter_company_code" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/company_code"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_company_code_"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:text="@={viewModel.companyCodeObserver}" />
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/enter_height_in_cm" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/height"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_height"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:text="@={viewModel.heightObserver}" />
+
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/enter_weight_in_kg" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/weight"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_weight"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:text="@={viewModel.weightObserver}" />
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/enter_resting_heart_rate" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/heart_rate"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_resting_heart_rate_"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:text="@={viewModel.heartObserver}" />
+
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/ring_use" />
+
+                    <RadioGroup
+                        android:id="@+id/ring_use"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/yes"
+                            style="@style/textview_fourteen"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/no"
+                            style="@style/textview_fourteen"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+
+
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="3dp"
+                        android:text="@string/enter_ring_id"
+                        android:visibility="@{ring ? View.VISIBLE : View.GONE ,default = gone }" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/ring_id"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_ring_id_"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:text="@={viewModel.ringIdObserver}"
+                        android:visibility="@{ring ? View.VISIBLE : View.GONE ,default = gone }" />
+
+                </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/signup"
+                        style="@style/newBlueButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginEnd="7dp"
+                        android:text="@string/signup" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/textview_sixteen_bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="@string/already_a_member" />
+
+                        <TextView
+                            android:id="@+id/login"
+                            style="@style/textview_sixteen_blue_bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="@string/login" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/progress"
+            layout="@layout/progress_bar" />
+
+    </FrameLayout>
+
+</layout>

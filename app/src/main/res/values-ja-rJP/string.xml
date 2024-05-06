@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="measurement_output_template">
+        <item quantity="zero">Pulse: %2.1f (%d cycle in %2.1f seconds)</item>
+        <item quantity="one">Pulse: %2.1f (%d cycle in %2.1f seconds)</item>
+        <item quantity="other">Pulse: %2.1f (%d cycles in %2.1f seconds)</item>
+    </plurals>
+    <string name="app_name">運転_安全</string>
+    <string name="app_name2">SDNC</string>
+    <string name="title_physicalCondition">     体調</string>
+    <string name="title_dashboard">             ダッシュボード</string>
+    <string name="title_notifications">         通知</string>
+    <string name="title_profile">               プロフィール</string>
+    <string name="title_previousData">          以前のデータ</string>
+    <string name="change_language">             言語を変更する<font color="#FF0000">*</font></string>
+    <string name="select_language">             使用言語を選択してください。</string>
+    <string name="login">                       ログインする</string>
+    <string name="login_into_your_account">     アカウントにログインします</string>
+    <string name="delete_user_account">          アカウントを削除してもよろしいですか?</string>
+    <string name="delete_account">              アカウントを削除する</string>
+    <string name="email_id">                    メールアドレス</string>
+    <string name="email_id_signup">             メールアドレス<font color="#FF0000">*</font></string>
+    <string name="password">                    パスワード</string>
+    <string name="password_signup">             パスワード<font color="#FF0000">*</font></string>
+    <string name="enter_email_id">              メールアドレスを入力してください</string>
+    <string name="enter_password">              パスワードを入力する</string>
+    <string name="forgot_password">             パスワードをお忘れですか</string>
+    <string name="forgot_password_que">             パスワードをお忘れですか？</string>
+    <string name="don_t_have_an_account_signup">アカウントを持っていませんか？</string>
+    <string name="signup">                      サインアップ</string>
+    <string name="create_your_account">         アカウントを作成！</string>
+    <string name="username">                    ユーザー名</string>
+    <string name="username_signup">             ユーザー名<font color="#FF0000">*</font></string>
+    <string name="enter_username">              ユーザーネームを入力してください</string>
+    <string name="confirm_password">            パスワードを認証する</string>
+    <string name="confirm_password_signup">     パスワードを認証する<font color="#FF0000">*</font></string>
+    <string name="enter_confirm_password">      パスワードの確認を入力します</string>
+    <string name="gender">                      性別<font color="#FF0000">*</font></string>
+    <string name="enter_phone_number">          電話番号を入力してください</string>
+    <string name="phone_number">                電話番号</string>
+    <string name="already_a_member">            すでにメンバー？</string>
+    <string name="send_email">                  メールを送る</string>
+    <string name="enter_otp">                   OTPを入力します</string>
+    <string name="enter_otp_sent_to_your_email">メールに送信されたOTPを入力してください</string>
+    <string name="continu">                     続く</string>
+    <string name="reset_password">              パスワードを再設定する</string>
+    <string name="enter_new_password">          新しいパスワードを入力してください</string>
+    <string name="new_password">          新しいパスワード</string>
+    <string name="no_internt">インターネット接続が検出されませんでした。</string>
+
+
+    <string name="update_profile">          プロフィールを更新する</string>
+    <string name="change_password">                 パスワードを変更する </string>
+    <string name="logout">                          ログアウト </string>
+    <string name="current_password">                現在のパスワード </string>
+    <string name="_5_ways_to_drive_safe">           安全に運転する5つの方法 </string>
+    <string name="safety_drive_neuro_conditioning"> セーフティドライブニューロコンディショニング </string>
+    <string name="sdnc">                            SDNC診断へようこそ </string>
+    <string name="search_by_date">                  日付で検索する </string>
+    <string name="vital_details">                   重要な詳細                    </string>
+    <string name="data_acquisition_camera_smart_ring">データ収集 - スマートリング</string>
+    <string name="data_acquisition_camera">データ取得 - カメラ</string>
+    <string name="date_amp_time">                   日付時刻：        </string>
+    <string name="pulse">                           脈：        </string>
+    <string name="no_of_steps">                     手順はありません：        </string>
+    <string name="qol_score">                       QOLスコア：        </string>
+    <string name="reflex_test">                     反射テスト：        </string>
+    <string name="aptitude_score">                  適性スコア：        </string>
+    <string name="overall_judgement">               最終判定結果        </string>
+    <string name="bed_time">                        就寝時間 <font color="#FF0000">*</font>        </string>
+    <string name="i_agree_to_the_terms_amp_conditions">私は利用規約に同意します</string>
+    <string name="privacy_policy">                  プライバシーポリシー      </string>
+    <string name="wake_up_time">                    目を覚ます時間 <font color="#FF0000">*</font>      </string>
+    <string name="breakfast">                       朝食      </string>
+    <string name="lunch">                           昼食      </string>
+    <string name="dinner">                          夕食      </string>
+    <string name="other">                           間食      </string>
+    <string name="meal">                            前日の食事      </string>
+    <string name="physical_condition">              体調 <font color="#FF0000">*</font>                    </string>
+    <string name="good">                            よい      </string>
+    <string name="bad">                             わるい      </string>
+    <string name="existence_of_fatigue">            疲れ <font color="#FF0000">*</font>      </string>
+    <string name="yes">                             はい      </string>
+    <string name="no">                              いいえ      </string>
+    <string name="please_enter_ring_id">リングIDを入力してください</string>
+    <string name="resend">再送信</string>
+
+
+    <string name="select_ring">リングの使用の有無をお選び下さい。</string>
+    <string name="presence_or_absence_of_medication">           眠気 <font color="#FF0000">*</font>     </string>
+    <string name="type_something">                              何かを入力     </string>
+    <string name="save">                                        保存する     </string>
+    <string name="data_confirmation">                           データ確認     </string>
+    <string name="living_situation_data_confirmation">          生活状況データ確認     </string>
+    <string name="registration_date">                           登録日     </string>
+    <string name="wake_up_time_">                               目を覚ます時間     </string>
+    <string name="bed_time_">                                   就寝時間     </string>
+    <string name="meal_">                                       食事     </string>
+    <string name="physical_condition_">                         体調     </string>
+    <string name="existence_of_fatigue_">                       疲れ     </string>
+    <string name="presence_of_medication_">眠気の有無     </string>
+    <string name="note">                                        ノート     </string>
+    <string name="please_select_the_acquisition_method_of_vital_data">バイタルデータの取得方法を選択して下さい</string>
+    <string name="with_smartphone_camera">                      スマートフォンカメラ付き                 </string>
+    <string name="get_with_smart_ring">                         スマートリングで取得                 </string>
+    <string name="reflex_diagnostic_test">                      反射診断テスト                 </string>
+    <string name="reaction_time_test">                          反応時間テスト                 </string>
+    <string name="when_the_box_turns_green_click_as_quickly_as_you_can_click_anywhere_to_start">ボックスが緑色になったら、できるだけ早くクリックします。どこでもクリックして開始します</string>
+    <string name="wait_for_green">                              緑を待ちます                  </string>
+    <string name="click">                                       クリック！                  </string>
+    <string name="click_to_keep_going">                         クリックして続けてください！                  </string>
+    <string name="aptitude_test">                               適性テスト                  </string>
+    <string name="let_us_know_how_many_answers_you_are_willing_to_give">あなたが喜んで与える答えを教えてください！</string>
+    <string name="no_of_questions">                             質問の数          </string>
+    <string name="enter_number_of_question">                    質問の数を入力してください          </string>
+    <string name="submit">                                      送信          </string>
+    <string name="the_state_of_your_safe_driving_nerve_is_as_follows">あなたの運転前のコンディションは\n
+下記の通りとなりました</string>
+
+
+    <string name="register">                                    登録する                                </string>
+    <string name="registration_completion">                     診断完了                 </string>
+    <string name="complete_heading">                            診断結果の登録が完了しました\n今日も安全運転に努めてください</string>
+    <string name="back_to_top">                                 ダッシュボードに戻る</string>
+    <string name="get_vital_data">                              重要なデータを取得します</string>
+    <string name="pulse_with_camera">                           パルス波\nカメラ</string>
+    <string name="enter_email">                                 メールアドレスを入力してください</string>
+    <string name="enter_confirm_password_">                     確認用のパスワードを入力してください</string>
+    <string name="enter_valid_email">                           有効なメールアドレスを入力してください</string>
+    <string name="enter_username_">                             ユーザー名を入力してください</string>
+    <string name="enter_password_">                             パスワードを入力してください</string>
+    <string name="enter_phonenumber_">                          電話番号（ハイフンなし）を入力してください。</string>
+    <string name="password_match">                              パスワードの確認とパスワードが一致しませんでした</string>
+    <string name="enter_gender">                                性別を選択してください</string>
+    <string name="enter_height_">                               身長を入力してください</string>
+    <string name="enter_weight_">                               体重を入力してください</string>
+    <string name="enter_heart">                                 安静時の心拍数を入力してください</string>
+    <string name="enter_birth">                                 誕生年を選択してください</string>
+    <string name="valid_number">                                有効な電話番号（ハイフンなし）を入力してください。</string>
+    <string name="enter_otp_field">                             ワンタイムパスワードを入力してください。</string>
+    <string name="enter_id">                                    IDは空です</string>
+    <string name="enter_companycode">                           会社コードを入力してください</string>
+    <string name="select_physical">                             あなたの体調を選択してください</string>
+    <string name="select_fatique">                              疲労の有無を選択してください</string>
+    <string name="select_medication">                           眠気の有無を選択してください</string>
+    <string name="enter_question_number">                       質問番号を入力してください          </string>
+    <string name="invalid_companycode">5桁の企業コードを入力してください</string>
+    <string name="ring_used">リング使用の有無をお選び下さい</string>
+    <string name="enter_ring_id_">              リングIDを入力してください                                           </string>
+    <string name="enter_ring_id_signup">         リングIDを入力してください<font color="#FF0000">*</font>                                           </string>
+
+    <string name="enter_resting_heart_rate_">   安静時の心拍数を入力してください                             </string>
+
+
+    <string name="bed_wake_time">睡眠時間を選択してください</string>
+    <string name="time_of_sleeping">睡眠時間<font color="#FF0000">*</font></string>
+    <string name="time_of_sleeping_">睡眠時間</string>
+
+    <string name="hello_blank_fragment">                    こんにちは空白フラグメント     </string>
+
+
+    <string name="max_wake">                                最大ウェイクアップ時間は24時間です     </string>
+    <string name="max_bed">                                 最大ベッド時間は24時間\ nです     </string>
+    <string name="returned_from_app_settings_to_activity">  アプリの設定からD \ nriverの安全性に戻り、次のアクセス許可があります：\ n \\ n \\ ncamera：％s</string>
+    <string name="rationale_camera">                        このアプリはあなたのカメラにアクセスする必要があるので、あなたは写真を撮ることができます   </string>
+    <string name="rationale_activity_recogination">         このアプリは、アクティビティ認識にアクセスする必要があります   </string>
+    <string name="noFlashWarning">              フラッシュなしの測定は信頼性が低くなります。             </string>
+
+
+    <string name="put_finger">                  人差し指または中指をフロントカメラに押し付け、パルス波が安定するまで動かさないでください。</string>
+    <string name="start_measurement">           測定を開始します</string>
+    <string name="acquisition_of_vital_data">   バイタルデータの取得</string>
+    <string name="acquisition_of_result_vital_data">   バイタルデータの取得結果</string>
+    <string name="to_stress_assessment">ストレス判定へ</string>
+
+    <string name="average">                     平均</string>
+    <string name="beat">                        ビート</string>
+    <string name="pulse_waveform">              パルス波形</string>
+    <string name="analysis_completed_tap_next"> 分析が完了しました。次にタップします。</string>
+    <string name="next">                        次</string>
+    <string name="logout_title">                ログアウトしたいですか？</string>
+    <string name="old_password">                古いパスワードを入力してください</string>
+    <string name="enter_new_password_">         新しいパスワードを入力してください</string>
+    <string name="same_password">               新しいパスワードは古いパスワードと同じです</string>
+    <string name="no_notification">             通知なし</string>
+    <string name="year_of_birth">               生年</string>
+    <string name="select_year_of_birth">        生年年を選択します</string>
+    <string name="enter_height_in_cm">          身長(cm)</string>
+    <string name="enter_weight_in_kg">          体重（kg)</string>
+    <string name="enter_height">                身長を入力してください (cm)</string>
+    <string name="enter_weight">                重量を入力してください (kg)</string>
+    <string name="enter_resting_heart_rate">    安静時心拍数 (BPM)</string>
+    <string name="enter_heart_rate">            心拍数</string>
+    <string name="enter_company_code">          会社コード</string>
+    <string name="enter_company_code_">         会社コードを入力してください                                     </string>
+
+    <string name="ring_use">                   リングの使用<font color="#FF0000">*</font></string>
+    <string name="enter_ring_id">               リングID<font color="#FF0000">*</font> </string>
+    <string name="oop_something_went_wrong">    おっと！何かが間違っていた</string>
+    <string name="smart_ring_data_acquisition"> スマートリングデータ収集</string>
+    <string name="get_data_from_smart_ring_touch_start_acquisition">   SOXAIリングからバイタルデータの取得が完了しました     </string>
+    <string name="from_soxi">SOXAIリングから バイタルデータの取得が完了しました</string>
+    <string name="obtain_vital">SOXAIリングからバイタルデータを取得します\n
+データ取得開始をタッチして下さい\n
+最新データを取得するためには、\n
+事前にSOXAIリングアプリを使用して\n
+データの同期を行う必要があります</string>
+    <string name="go_stress">ストレス判定へ</string>
+    <string name="data_acquisition_start">                              データ取得開始        </string>
+    <string name="data_acquisition_progress">                           データ取得の進捗        </string>
+    <string name="after_acquiring_vital_data_tap_on_next">              SOXAIリングからバイタルデータの取得が完了しました        </string>
+    <string name="quality_of_life_judgement">                           生活の質の判断        </string>
+    <string name="qol_score_is_determined_from_vital_data_and_living_situation_data">   QOLスコアは、重要なデータと生活状況データから決定されます。</string>
+    <string name="touch_the_ql_judgement_button_to_judge_the_current_score">            QL判断ボタンをタッチして、\ ncurrentスコアを判断します。</string>
+    <string name="quality_of_life_determination">           生活の質の決定</string>
+    <string name="qol_judgement_result">                    ストレススコア判定結果</string>
+    <string name="physical_condition_result">               体調 ：</string>
+    <string name="go_to_reflex_test">                       反射テストへ</string>
+    <string name="separator">,</string>
+
+
+    <string name="row_separator">\n</string>
+    <string name="raw_values">測定（タイムスタンプ、値）</string>
+    <string name="dateFormat">yyyy-MM-dd\'T\'HH:mm:ssZZZZZ</string>
+    <string name="dateFormatGranular">yyyy-MM-dd\'T\'HH:mm:ss.SSSZZZZZ</string>
+    <string name="measurement">測定</string>
+
+    <string name="accept_privacy">利用規約に同意してください</string>
+
+    <!-- <plurals name="measurement_output_template">
+         <item quantity="zero">  パルス：％2.1f（％2.1f秒での％dサイクル） </item>
+         <item quantity="one">   パルス：％2.1f（％2.1f秒での％dサイクル） </item>
+         <item quantity="other"> パルス：％2.1f（％2.1f秒でサイクル％dサイクル） </item>
+     </plurals>-->
+
+    <string name="select_year">誕生年を選択してください</string>
+
+    <string name="cancel">キャンセル</string>
+    <string name="ring_auth">SOAXI リング認証</string>
+    <string name="login_with">資格情報を使用してログインしてください!</string>
+    <string name="connect">接続</string>
+    <string name="invalid_credentials">無効な資格情報</string>
+    <string name="other_ring">リングの登録情報を変更しますか?</string>
+    <string name="weak_password">少なくとも 1 つの数字、1 つの大文字と 1 つの小文字、1 つの特殊文字、および少なくとも 8 文字を含める必要があります</string>
+    <string name="enter_current_password">          現在のパスワードを入力してください</string>
+    <string name="password_weak">パスワードは、８文字以上（英字大文字小文字・数字・記号含む）を入力してください。</string>
+    <string name="driving_start">運転開始</string>
+    <string name="start_driving_tap">運転を開始し、危険箇所が現れたら停止ボタンをクリックしてください。</string>
+
+
+    <string name="start_driving_second">運転を開始し、危険な場所が現れたらタグを付けます。叩いてください。</string>
+    <string name="stop_driving">運転停止</string>
+    <string name="reflection_time">反射時間</string>
+    <string name="meal_not_taken">食事は摂っていません</string>
+    <string name="no_previous_record_found">以前のレコードが見つかりませんでした</string>
+    <string name="select_wakeup_time">起床時間を選択してください</string>
+    <string name="select_bed_time">就寝時間を選択してください</string>
+    <string name="sdnc_induction">SDNC導入期間適合性判定</string>
+    <string name="saftey_first">安全第一</string>
+    <string name="ok">わかりました</string>
+    <string name="login_heading">ご登録済みのメールアドレスと\n
+パスワードをご入力してください</string>
+    <string name="click_here_forgot"><u>パスワードを忘れた場合はこちら</u></string>
+
+
+    <!-- new strings -->
+    <string name="new_registeration">新規登録はこちら</string>
+    <string name="sdnc_information">SDNCインフォメーション</string>
+    <string name="predefine_diagnosis">運転前診断はこちら</string>
+    <string name="transport_information">交通関連インフォメーション</string>
+    <string name="diagnosis_history">診断履歴</string>
+    <string name="diagnosis_health_history">診断履歴詳細</string>
+    <string name="data_acquisition_method">データ取得方法：</string>
+    <string name="diagnosis_time">診断時刻：</string>
+
+    <string name="sleep_score">睡眠スコア：</string>
+    <string name="exercise_score">運動スコア：</string>
+    <string name="stress_score">ストレススコア：</string>
+    <string name="quality_life_score">QOLスコア：</string>
+    <string name="comprehensive_diagnosis">総合診断：</string>
+    <string name="level_dangerous">レベル１ 非常に危険です</string>
+    <string name="level_alert_required">レベル２ 警戒が必要です</string>
+    <string name="level_caution_required">レベル３ 注意が必要です</string>
+    <string name="level_appropriate">レベル４ 適正です</string>
+    <string name="level_is_best">レベル５ 最適です</string>
+    <string name="sdnc_diagnosis">                  SDNC診断</string>
+    <string name="self_condition">                  セルフコンディションチェック（確認）</string>
+
+    <string name="self_condition_title">                  自己診断</string>
+    <string name="self_condition_check">                  セルフコンディションチェック</string>
+    <string name="latest_situation">                直近の状況を登録して下さい</string>
+    <string name="last_meal">                       直近の食事</string>
+    <string name="physical_condition_new">              体調</string>
+    <string name="presence_of_fatigue">             疲労の有無<font color="#FF0000">*</font></string>
+    <string name="presence_of_fatigue_">             疲労の有無</string>
+    <string name="presence_of_sleepiness">          眠気の有無<font color="#FF0000">*</font></string>
+    <string name="presence_of_sleepiness_">          眠気の有無</string>
+    <string name="memo">                            メモ</string>
+    <string name="please_select_vital_data">        バイタルデータの取得方法を選択して下さい</string>
+    <string name="taken_with_smartphone_camera">    スマホのカメラで取得</string>
+    <string name="or">                              または</string>
+    <string name="get_with_smartring">              スマートリングで取得</string>
+    <string name="to_next">次へ</string>
+    <string name="measurement_status">計測状況</string>
+    <string name="measuring_your_heartrate">心拍数の測定しています静止して下さい</string>
+
+    <string name="hide_the_back_camera">人差し指でバックカメラを隠す</string>
+    <string name="average_heart_rate">平均心拍数</string>
+    <string name="analysis_pulse">脈波変動の解析が完了しました</string>
+    <string name="to_qol">データ取得開始</string>
+    <string name="certification_soaxi">SOXAIリングの認証</string>
+    <string name="enter_soaxi">SOXAIリングのご登録済みのメールアドレスと
+パスワードをご入力してください</string>
+
+    <string name="connecting">接続する</string>
+    <string name="reflex_test_">反射テスト</string>
+    <string name="tap_start1">スタートをタップして\n危険な場面になったら画面をタップして下さい</string>
+    <string name="tap_start2">スタートをタップして\n危険な場面になったらブレーキをタップして下さい</string>
+    <string name="tap_start3">反射時間の計測が完了しました</string>
+
+
+    <string name="start">スタート</string>
+    <string name="brake">ブレーキ</string>
+    <string name="to_final_judgment">最終判定へ</string>
+    <string name="restart">リスタート</string>
+    <string name="reflex_time_above">反射時間は上記の通りとなりました\n
+もう一度試す場合はリスタートをタップして下さい</string>
+    <string name="second">秒</string>
+    <string name="after_confirmation">上記の最終判定結果に対するコメントを確認の上、安全運転を心がけてください</string>
+    <string name="diagnosis_result">診断結果登録完了</string>
+    <string name="qol_score_">ストレススコア</string>
+    <string name="qol_life">Quality of Life（生活の質）は</string>
+    <string name="take_action">現在のストレスに応じたエクササイズを\n
+実行してください（下記の画面をタッチ）</string>
+    <string name="after_action">エクササイズ実行後、反射テストに進んで下さい</string>
+    <string name="profile_updated">プロファイルが正常に更新されました</string>
+
+    <string name="bed_hrs"> 就寝時間を入力してください</string>
+    <string name="bed_min"> 就寝時間分を入力してください</string>
+    <string name="wake_hrs">起床時間を入力してください</string>
+    <string name="wake_min">起床時間分を入力してください </string>
+
+    <string name="camera">カメラ</string>
+    <string name="ring">指輪</string>
+
+    <string name="height_min">身長を54cm～300cmの間で入力してください</string>
+    <string name="weight_min">体重は40kg～360kgの間で入力してください</string>
+    <string name="heart_min">安静時の心拍数は 40 ～ 220 である必要があると入力してください</string>
+
+    <string name="go_back_title">脈拍測定に失敗しました!</string>
+    <string name="go_back">カメラに指を正しく置き、再度測定してください。</string>
+
+    <string name="hours">時間</string>
+    <string name="minutes">分</string>
+    <string name="url_not_vaild">                                    この URL は無効です     </string>
+
+    <string name="txt_DoYouWantToDownloadHealthCareApp">続行するにはヘルスコネクト アプリが必要です。アプリをダウンロードして続行しますか?</string>
+    <string name="healthcarePermissionNotGranted">ヘルスケア データにアクセスするには、ヘルスコネクト アプリからアプリの許可を取得してください。</string>
+    <string name="txt_GrantThePermissionFirst">Grant the permission first.</string>
+    <string name="txt_GrantThePermissionForHealthConnectFirst">ヘルスケア データにアクセスするには、ヘルスコネクト アプリからアプリの許可を取得してください。</string>
+
+    <string-array name="Gender">
+        <item>性別を選択して下さい</item>
+        <item>男性</item>
+        <item>女性</item>
+        <item>他の</item>
+    </string-array>
+
+    <string-array name="Language">
+        <item>English</item>
+        <item>Japanese</item>
+    </string-array>
+
+    <string name="japan">日本語</string>
+    <string name="eng">英語</string>
+
+    <string-array name="hrs">
+        <item>時間</item>
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+
+    </string-array>
+
+    <string-array name="min">
+        <item>分</item>
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+
+    </string-array>
+
+
+</resources>

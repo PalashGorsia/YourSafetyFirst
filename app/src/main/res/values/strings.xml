@@ -1,0 +1,446 @@
+<resources>
+    <plurals name="measurement_output_template">
+        <item quantity="zero">Pulse: %2.1f (%d cycle in %2.1f seconds)</item>
+        <item quantity="one">Pulse: %2.1f (%d cycle in %2.1f seconds)</item>
+        <item quantity="other">Pulse: %2.1f (%d cycles in %2.1f seconds)</item>
+    </plurals>
+    <string name="app_name2">                    Your Safety First      </string>
+    <string name="title_physicalCondition">     Physical Condition</string>
+    <string name="title_dashboard">             Dashboard</string>
+    <string name="title_notifications">         Notifications</string>
+    <string name="title_profile">               Profile</string>
+    <string name="title_previousData">          Previous Data</string>
+    <string name="change_language">             Change your language<font color="#FF0000">*</font></string>
+    <string name="select_language">             Select your language</string>
+    <string name="login">                       Login</string>
+    <string name="login_into_your_account">     Login into your account</string>
+    <string name="delete_user_account">         Are you sure you want to delete your account?</string>
+    <string name="delete_account">              Delete Account</string>
+    <string name="email_id">                    Email Address</string>
+    <string name="email_id_signup">             Email Address<font color="#FF0000">*</font></string>
+    <string name="password">                    Password</string>
+    <string name="password_signup">             Password<font color="#FF0000">*</font></string>
+    <string name="enter_email_id">              Enter Email Address</string>
+    <string name="enter_password">              Enter Password</string>
+    <string name="forgot_password">             Forgot Password</string>
+    <string name="forgot_password_que">             Forgot Password?</string>
+    <string name="don_t_have_an_account_signup">Don’t have an account?</string>
+    <string name="signup">                      Signup</string>
+    <string name="create_your_account">         Create your account!</string>
+    <string name="username">                    Username</string>
+    <string name="username_signup">             Username<font color="#FF0000">*</font></string>
+    <string name="enter_username">              Enter Username</string>
+    <string name="confirm_password">            Confirm Password</string>
+    <string name="confirm_password_signup">     Confirm Password<font color="#FF0000">*</font></string>
+    <string name="gender">                      Gender<font color="#FF0000">*</font></string>
+    <string name="enter_phone_number">          Enter Telephone Number</string>
+    <string name="phone_number">                Telephone Number</string>
+    <string name="already_a_member">            Already a member?</string>
+    <string name="send_email">                  Send Email</string>
+    <string name="enter_otp">                   Enter OTP</string>
+    <string name="enter_otp_sent_to_your_email">Enter OTP sent to your email</string>
+    <string name="continu">                     Continue</string>
+    <string name="reset_password">              Reset Password</string>
+    <string name="enter_new_password">          Enter New Password</string>
+    <string name="new_password">          New Password</string>
+    <string name="enter_current_password">          Enter Current Password</string>
+    <string name="enter_confirm_password">          Enter Confirm Password</string>
+
+
+    <string name="update_profile">Update Your Profile</string>
+    <string name="change_password">                 Change Password                 </string>
+    <string name="logout">                          Logout                          </string>
+    <string name="current_password">                Current Password                </string>
+    <string name="_5_ways_to_drive_safe">           5 ways to drive safe            </string>
+    <string name="safety_drive_neuro_conditioning"> Safety Drive Neuro Conditioning </string>
+    <string name="sdnc">                            Welcome to SDNC diagnosis                            </string>
+    <string name="search_by_date">                  Search by date                  </string>
+    <string name="vital_details">                   Vital Detail                                       </string>
+    <string name="data_acquisition_camera_smart_ring">Data acquisition - Smart ring</string>
+    <string name="data_acquisition_camera">Data acquisition - Camera</string>
+    <string name="date_amp_time">                   <![CDATA[Date & Time:]]>        </string>
+    <string name="pulse">                           Pulse:                          </string>
+    <string name="no_of_steps">                     No of steps:                    </string>
+    <string name="qol_score">                       QOL score:                      </string>
+    <string name="reflex_test">                     Reflex test:                    </string>
+    <string name="aptitude_score">                  Aptitude score:                 </string>
+    <string name="overall_judgement">               Final judgment result              </string>
+    <string name="bed_time">                        Bed time <font color="#FF0000">*</font>                      </string>
+    <string name="i_agree_to_the_terms_amp_conditions">I agree to the Terms &amp; Conditions</string>
+    <string name="privacy_policy">                  Privacy Policy                  </string>
+    <string name="wake_up_time">                    Wake up time <font color="#FF0000">*</font>                  </string>
+    <string name="breakfast">                       Breakfast                       </string>
+    <string name="lunch">                           Lunch                           </string>
+    <string name="dinner">                          Dinner                          </string>
+    <string name="other">                           Snack                           </string>
+    <string name="meal">                            Meal the day before                            </string>
+    <string name="physical_condition">              Physical Condition <font color="#FF0000"><font color="#FF0000">*</font></font>                        </string>
+
+    <string name="good">                            Good                            </string>
+    <string name="bad">                             Bad                             </string>
+    <string name="existence_of_fatigue">            Existence of fatigue <font color="#FF0000">*</font>          </string>
+    <string name="yes">                             Yes                             </string>
+
+
+    <string name="no">                              No                              </string>
+    <string name="presence_or_absence_of_medication">           Presence of sleepiness <font color="#FF0000">*</font>                </string>
+    <string name="memo">                                        Memo                                    </string>
+    <string name="type_something">                              Type something                          </string>
+    <string name="save">                                        Save                                    </string>
+    <string name="data_confirmation">                           Data confirmation                       </string>
+    <string name="living_situation_data_confirmation">          Living situation data confirmation      </string>
+    <string name="registration_date">                           Registration date                       </string>
+    <string name="wake_up_time_">                               Wake up time                           </string>
+    <string name="bed_time_">                                   Bed time                          </string>
+    <string name="meal_">                                       Meal                                    </string>
+    <string name="physical_condition_">                         Physical condition                      </string>
+    <string name="existence_of_fatigue_">                       Existence of fatigue                    </string>
+    <string name="presence_of_medication_">                     Presence of sleepiness                  </string>
+    <string name="note">                                        Note                                    </string>
+    <string name="please_select_the_acquisition_method_of_vital_data">Please select the method for obtaining vital data</string>
+    <string name="or">                                          or                                      </string>
+    <string name="with_smartphone_camera">                      With Smartphone Camera                  </string>
+    <string name="get_with_smart_ring">                         Get it with smart ring                  </string>
+    <string name="reflex_diagnostic_test">                      Reflex diagnostic test                  </string>
+    <string name="reaction_time_test">                          Reaction Time Test                      </string>
+    <string name="when_the_box_turns_green_click_as_quickly_as_you_can_click_anywhere_to_start">When the box turns green, click as quickly as you can. Click anywhere to start</string>
+    <string name="wait_for_green">                              Wait for green                          </string>
+    <string name="click">                                       Click!                                  </string>
+    <string name="click_to_keep_going">                         Click to keep going!                    </string>
+    <string name="aptitude_test">                               Aptitude test                           </string>
+    <string name="let_us_know_how_many_answers_you_are_willing_to_give">Let us know how many answers you are willing to give!</string>
+    <string name="no_of_questions">                             No. of questions                        </string>
+    <string name="enter_number_of_question">                    Enter number of question                </string>
+    <string name="submit">                                      Submit                                  </string>
+    <string name="the_state_of_your_safe_driving_nerve_is_as_follows">What is your condition before driving?\n
+It became as follows</string>
+
+
+    <string name="url_not_vaild">                                    This URL is not valid                                </string>
+    <string name="register">                                    Register                                </string>
+    <string name="registration_completion">                     Diagnosis completion                 </string>
+    <string name="complete_heading">                            Registration of diagnosis results has been completed.Please try to drive safely today.</string>
+    <string name="back_to_top">                                 Return to dashboard                             </string>
+    <string name="get_vital_data">                              Get vital data                          </string>
+    <string name="pulse_with_camera">                           Pulse wave\ncamera                      </string>
+    <string name="enter_email">                                 Please enter email address                      </string>
+    <string name="enter_confirm_password_">                     Please enter confirm password           </string>
+    <string name="enter_valid_email">                           Please enter valid email address      </string>
+    <string name="enter_username_">                             Please enter username                 </string>
+    <string name="enter_password_">                             Please enter password             </string>
+    <string name="enter_phonenumber_">                          Please enter telephone number             </string>
+    <string name="password_match">                              Confirm Password and Password did not match</string>
+    <string name="enter_gender">                                Please select a gender                  </string>
+    <string name="enter_height_">                               Please enter height                     </string>
+    <string name="enter_weight_">                               Please enter weight                     </string>
+    <string name="enter_heart">                                 Please enter resting heart rate                </string>
+    <string name="enter_birth">                                 Please select year of birth                </string>
+    <string name="valid_number">                                Please enter a valid telephone number       </string>
+    <string name="enter_otp_field">                             Please enter the OTP first                         </string>
+    <string name="enter_id">                                    ID is empty                             </string>
+    <string name="enter_companycode">                           Please enter your company code          </string>
+    <string name="select_physical">                             Please select your physical condition          </string>
+    <string name="select_fatique">                              Please select presence of fatigue          </string>
+    <string name="select_medication">                           Please select presence of sleepiness</string>
+    <string name="bed_wake_time">Please select time of sleeping</string>
+    <string name="time_of_sleeping">Time of sleeping<font color="#FF0000">*</font></string>
+    <string name="time_of_sleeping_">Time of sleeping</string>
+    <string name="enter_question_number">                       Please enter question number            </string>
+
+    <string name="hello_blank_fragment">                    Hello blank fragment                </string>
+
+    <string name="max_wake">                                Maximum wakeup time is 24 hrs       </string>
+    <string name="max_bed">                                 Maximum bed time is 24 hrs\n        </string>
+    <string name="returned_from_app_settings_to_activity">  Returned from app settings to d\nriver safety with the following permissions:\n        \\n\\nCamera: %s</string>
+    <string name="rationale_camera">                        This app needs access to your camera so you can take pictures   </string>
+    <string name="rationale_activity_recogination">         This app needs access to your activity recognition              </string>
+    <string name="separator">,</string>
+
+    <string name="japan">Japanese</string>
+    <string name="eng">English</string>
+
+    <string name="row_separator">\n</string>
+    <string name="raw_values">Measurements (Timestamp, Value)</string>
+    <string name="dateFormat">yyyy-MM-dd\'T\'HH:mm:ssZZZZZ</string>
+    <string name="dateFormatGranular">yyyy-MM-dd\'T\'HH:mm:ss.SSSZZZZZ</string>
+    <string name="measurement">Measurement</string>
+    <string name="noFlashWarning">              Measurement without flash is less reliable.             </string>
+    <string name="put_finger">                  Press your index finger or middle finger against the front camera and do not move it until your pulse wave stabilizes.</string>
+
+    <string name="start_measurement">           Start Measurement                                       </string>
+    <string name="acquisition_of_vital_data">   Acquisition of vital data                             </string>
+    <string name="acquisition_of_result_vital_data">   Acquisition result of vital data</string>
+    <string name="average">                     Average                                                 </string>
+    <string name="beat">                        Beat                                                    </string>
+    <string name="pulse_waveform">              Pulse waveform                                          </string>
+    <string name="analysis_completed_tap_next"> Analysis completed. Tap next.                           </string>
+    <string name="next">                        Next                                                    </string>
+    <string name="logout_title">                Are you sure you want to logout?                        </string>
+    <string name="old_password">                Please enter your old password                          </string>
+    <string name="enter_new_password_">         Please enter your new password                          </string>
+    <string name="same_password">               Your new password is same as old password               </string>
+    <string name="no_notification">             No Notification                                         </string>
+    <string name="year_of_birth">               Year of Birth                                           </string>
+    <string name="select_year_of_birth">        Select Year of Birth                                    </string>
+    <string name="enter_height_in_cm">          Height (cm)                                    </string>
+    <string name="enter_weight_in_kg">          Weight (kg)                                    </string>
+    <string name="enter_height">                Enter Height (cm)                                            </string>
+    <string name="enter_weight">                Enter Weight (kg)                                            </string>
+    <string name="enter_resting_heart_rate">    Resting Heart Rate (BPM)                              </string>
+    <string name="enter_resting_heart_rate_">   Enter Resting Heart Rate                                </string>
+    <string name="enter_heart_rate">            Heart Rate                                        </string>
+    <string name="enter_company_code">          Company Code                                      </string>
+    <string name="enter_company_code_">         Enter Company Code                                      </string>
+    <string name="ring_use">                    Using the ring<font color="#FF0000">*</font>                                                </string>
+    <string name="enter_ring_id">               Ring Id<font color="#FF0000">*</font>                                            </string>
+    <string name="enter_ring_id_">              Enter Ring Id                                           </string>
+    <string name="enter_ring_id_signup">         Enter Ring Id<font color="#FF0000">*</font>                                           </string>
+    <string name="oop_something_went_wrong">    Oop\'s something went wrong                             </string>
+    <string name="smart_ring_data_acquisition"> Smart ring data acquisition                             </string>
+    <string name="get_data_from_smart_ring_touch_start_acquisition">    Acquisition of vital data from SOXAI ring completed         </string>
+    <string name="data_acquisition_start">                              Start Data Acquisition                                      </string>
+    <string name="obtain_vital">Acquire vital data from SOXAI ring\n
+Please touch the button of Start data acquisition\n
+In order to acquire the latest data,\n
+it is necessary to synchronize the data\n
+by using the SOXAI Ring app in advance</string>
+    <string name="from_soxi">Acquisition of vital data from SOXAI ring completed.</string>
+    <string name="go_stress">Go to stress assessment</string>
+    <string name="data_acquisition_progress">                           Data acquisition progress                                   </string>
+    <string name="after_acquiring_vital_data_tap_on_next">            Acquisition of vital data from SOXAI ring completed                    </string>
+    <string name="quality_of_life_judgement">                           Quality of Life Judgement                                   </string>
+    <string name="qol_score_is_determined_from_vital_data_and_living_situation_data">   QoL score is determined from vital data and living situation data.  </string>
+    <string name="touch_the_ql_judgement_button_to_judge_the_current_score">            Touch the QL judgement button to judge the\ncurrent score.          </string>
+    <string name="quality_of_life_determination">           Quality of life determination   </string>
+    <string name="qol_judgement_result">                   Stress score judgment results     </string>
+    <string name="physical_condition_result">               Physical condition :            </string>
+    <string name="go_to_reflex_test">                       Go to reflex test               </string>
+    <string name="accept_privacy">Please accept term and condition</string>
+    <string name="select_year">Select Birth Year</string>
+    <string name="cancel">Cancel</string>
+    <string name="ring_auth">SOAXI Ring Authorization</string>
+    <string name="login_with">Login with credentials!</string>
+    <string name="connect">Connect</string>
+    <string name="invalid_credentials">Invalid credentials</string>
+    <string name="other_ring">Do you want to continue with\nother ring?</string>
+    <string name="weak_password">Must contain at least one number, one uppercase and one lowercase letter, one special character, and at least 8 characters</string>
+    <string name="invalid_companycode">Please enter five digit company code</string>
+    <string name="ring_used">Please select whether you are using ring or not</string>
+    <string name="password_weak">Password must be at least 8 characters long</string>
+
+    <string name="select_ring">Please select whether a ring is being used or not.</string>
+    <string name="please_enter_ring_id">Please enter ring id</string>
+    <string name="driving_start">Driving Start</string>
+    <string name="start_driving_tap">Start Driving and click on Stop button when dangerous spot appears.</string>
+    <string name="start_driving_second">Start driving and tag a dangerous place when it appears.Please hit me.</string>
+    <string name="stop_driving">Driving Stop</string>
+    <string name="reflection_time">Reflection time</string>
+    <string name="meal_not_taken">Meal not taken</string>
+    <string name="no_previous_record_found">No Previous Record Found</string>
+    <string name="select_wakeup_time">Select wake up time</string>
+    <string name="select_bed_time">Select bed time</string>
+    <string name="saftey_first">Safety\nFirst</string>
+    <string name="sdnc_induction">SDNC Induction Period Compatibility Judgement</string>
+    <string name="ok">Ok</string>
+    <string name="resend">Resend</string>
+
+    <string name="login_heading">Please enter your registered \nemail address and password</string>
+    <string name="click_here_forgot"><u>Click here if you forgot your password</u></string>
+
+    <!-- new strings -->
+    <string name="new_registeration">Click here for new registration</string>
+    <string name="sdnc_information">SDNC information</string>
+    <string name="predefine_diagnosis">Click here for pre-driving diagnosis</string>
+    <string name="transport_information">Transportation related information</string>
+    <string name="diagnosis_history">Diagnosis history</string>
+    <string name="diagnosis_health_history">Diagnostic history details</string>
+    <string name="data_acquisition_method">Data acquisition method:</string>
+    <string name="diagnosis_time">Diagnosis time:</string>
+    <string name="sleep_score">Sleep score:</string>
+    <string name="exercise_score">Exercise score:</string>
+    <string name="stress_score">Stress score:</string>
+    <string name="quality_life_score">Quality of life score:</string>
+    <string name="comprehensive_diagnosis">Comprehensive diagnosis:</string>
+    <string name="level_dangerous">Level 1 very dangerous</string>
+    <string name="level_alert_required">Level 2 alert required</string>
+    <string name="level_caution_required">Level 3 caution required</string>
+    <string name="level_appropriate">Level 4 appropriate</string>
+    <string name="level_is_best">level 5 best</string>
+    <string name="sdnc_diagnosis">                  SDNC diagnosis</string>
+    <string name="self_condition">                  Self condition check (confirmation)</string>
+
+    <string name="self_condition_title">                  Self Diagnosis</string>
+
+    <string name="self_condition_check">                  Self condition check</string>
+    <string name="latest_situation">    Please register your latest situation</string>
+    <string name="last_meal">                       Last meal</string>
+    <string name="physical_condition_new">              physical condition</string>
+    <string name="presence_of_fatigue">             Presence of fatigue<font color="#FF0000">*</font></string>
+    <string name="presence_of_fatigue_">             Presence of fatigue</string>
+    <string name="presence_of_sleepiness">          Presence of sleepiness<font color="#FF0000">*</font></string>
+    <string name="presence_of_sleepiness_">          Presence of sleepiness</string>
+    <string name="please_select_vital_data">        Please select the acquisition method of vital data</string>
+    <string name="taken_with_smartphone_camera">    Taken with a smartphone camera</string>
+    <string name="get_with_smartring">              Get it with smart ring</string>
+    <string name="to_next">To the next</string>
+    <string name="measurement_status">Measurement status</string>
+    <string name="measuring_your_heartrate">Please stand still while measuring your heart rate.</string>
+
+
+    <string name="hide_the_back_camera">Hide the back camera with your index finger</string>
+    <string name="average_heart_rate">Average Heart Rate</string>
+    <string name="analysis_pulse">Analysis of pulse wave fluctuations\nhas been completed</string>
+    <string name="to_qol">Start data acquisition</string>
+    <string name="to_stress_assessment">Go to stress assessment</string>
+    <string name="certification_soaxi">Certification of SOXAI ring</string>
+    <string name="enter_soaxi">Please enter your registered email address for SOXAI ring and your password</string>
+
+    <string name="connecting">Connecting</string>
+    <string name="reflex_test_">Reflex Test</string>
+    <string name="tap_start1">Tap start Tap the screen when you are in a dangerous situation</string>
+    <string name="tap_start3">Reflection time measurement completed</string>
+    <string name="tap_start2">Tap start If you are in a dangerous situation,tap the brake.</string>
+
+    <string name="start">Start</string>
+    <string name="brake">Brake</string>
+    <string name="to_final_judgment">To Final Judgment</string>
+    <string name="restart">Restart</string>
+    <string name="reflex_time_above">Reflex time is as above.\nTap restart if you want to try again.</string>
+    <string name="second">Seconds</string>
+    <string name="after_confirmation">After confirming the comments on the final judgment result above, Please drive safely</string>
+    <string name="diagnosis_result">Diagnosis result registration completed</string>
+    <string name="qol_score_">Stress score</string>
+    <string name="qol_life">Quality of Life is</string>
+    <string name="take_action">Exercise according to your current stress\n
+    Please execute (touch the screen below)</string>
+    <string name="after_action">After performing the exercise, proceed to the reflex test</string>
+    <string name="profile_updated">Profile updated successfully </string>
+
+    <string name="bed_hrs"> Please enter bed time hours     </string>
+    <string name="bed_min"> Please enter bed time minutes   </string>
+    <string name="wake_hrs">Please enter wakeup time hours  </string>
+    <string name="wake_min">Please enter wakeup time minutes </string>
+    <string name="camera">Camera</string>
+    <string name="ring">Ring</string>
+    <string name="no_internt">No internet connection detected.</string>
+
+    <string name="height_min">Please enter a height between 54 cm and 300 cm</string>
+    <string name="weight_min">Please enter weight between  40 kg and 360 kg</string>
+    <string name="heart_min">Please enter resting heart rate should be between 40 to 220</string>
+
+    <string name="hours">hours</string>
+    <string name="minutes">minutes</string>
+    <string name="go_back_title">Pulse Measurement Failed!</string>
+    <string name="go_back">Put your finger on the camera properly and retake the measurement</string>
+    <string name="txt_app_is_notInstalled">App is not installed.</string>
+    <string name="txt_DoYouWantToDownloadHealthCareApp">We need the Health Connect app to proceed. Do you want to download the app and proceed?</string>
+    <string name="healthcarePermissionNotGranted">To access health care data, please obtain app permission from the Health Connect app.</string>
+    <string name="txt_GrantThePermissionFirst">Grant the permission first.</string>
+    <string name="txt_GrantThePermissionForHealthConnectFirst">To access health care data, please obtain app permission from the Health Connect app.</string>
+    <string-array name="Gender">
+        <item>Select gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="Language">
+        <item>English</item>
+        <item>Japanese</item>
+    </string-array>
+
+
+    <string-array name="hrs">
+        <item>Hrs</item>
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+
+    </string-array>
+
+    <string-array name="min">
+        <item>Min</item>
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+
+    </string-array>
+</resources>

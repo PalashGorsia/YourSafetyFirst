@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="ring"
+            type="Boolean" />
+
+        <variable
+            name="viewModel"
+            type="com.sdei.yoursafetyfirst.ui.profile.ProfileViewModel" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".ui.profile.ProfileFragment">
+
+            <include
+                android:id="@+id/top_bar"
+                layout="@layout/appbar" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="13dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/username_signup" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_username"
+                        android:padding="10dp"
+                        android:text="@={viewModel.nameObserver}" />
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/email_id_signup" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_email_id"
+                        android:padding="10dp"
+
+                        android:text="@={viewModel.emailObserver}" />
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+
+                        android:text="@string/phone_number" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_phone_number"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:padding="10dp"
+
+                        android:text="@={viewModel.phoneObserver}" />
+
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/gender" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_curve">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/gender_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/change_language" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_curve">
+
+                        <Spinner
+                            android:id="@+id/languageSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+
+                        android:text="@string/year_of_birth" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/birth_year"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/select_year_of_birth"
+                        android:maxLength="12"
+                        android:padding="10dp"
+
+                        android:singleLine="true"
+                        android:text="@={viewModel.yearObserver}" />
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+
+                        android:text="@string/enter_company_code" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/company_code"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_company_code_"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:padding="10dp"
+
+                        android:singleLine="true"
+                        android:text="@={viewModel.companyCodeObserver}" />
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/enter_height_in_cm" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/height"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_height"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="10dp"
+
+                        android:singleLine="true"
+                        android:text="@={viewModel.heightObserver}" />
+
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+
+                        android:text="@string/enter_weight_in_kg" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/weight"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_weight"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="10dp"
+
+                        android:singleLine="true"
+                        android:text="@={viewModel.weightObserver}" />
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+
+                        android:text="@string/enter_resting_heart_rate" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/heart_rate"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_resting_heart_rate_"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="10dp"
+
+                        android:singleLine="true"
+                        android:text="@={viewModel.heartObserver}" />
+
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+
+                        android:text="@string/ring_use" />
+
+                    <RadioGroup
+                        android:id="@+id/ring_use"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/yes"
+                            style="@style/editText_fourteen"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/no"
+                            style="@style/editText_fourteen"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        style="@style/textview_fourteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="3dp"
+                        android:text="@string/enter_ring_id"
+                        android:visibility="@{ring ? View.VISIBLE : View.GONE ,default = gone }" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/ring_id"
+                        style="@style/editText_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/edittext_curve"
+                        android:hint="@string/enter_ring_id_"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:text="@={viewModel.ringIdObserver}"
+                        android:visibility="@{ring ? View.VISIBLE : View.GONE ,default = gone }" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/change_password"
+                            style="@style/textview_fourteen_blue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:padding="3dp"
+                            android:text="@string/change_password" />
+
+                        <TextView
+                            android:id="@+id/logout"
+                            style="@style/textview_fourteen_red"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:padding="3dp"
+                            android:text="@string/logout" />
+                    </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/updateProfile"
+                            style="@style/newBlueButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:text="@string/update_profile"
+                            android:layout_marginTop="15dp"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/deleteProfile"
+                        android:background="@drawable/edittext_curve"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="16sp"
+                        android:textAllCaps="false"
+                        android:padding="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:textStyle="normal"
+                        android:layout_marginStart="8dp"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:text="@string/delete_account"
+                        android:layout_marginTop="15dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/progress"
+            layout="@layout/progress_bar" />
+
+    </FrameLayout>
+
+</layout>
